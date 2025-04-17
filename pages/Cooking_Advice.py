@@ -29,7 +29,7 @@ tools = [
 ]
 
 def start_chat_session():
-    vertexai.init(project="qwiklabs-gcp-00-1280d0a05660", location="us-central1")
+    vertexai.init(project=[Project ID], location="us-central1")
     model = GenerativeModel(
         "gemini-1.5-pro-002",
         tools=tools,
